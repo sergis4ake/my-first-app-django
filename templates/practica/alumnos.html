@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Alumnos </title>
+	</head>
+
+	<body>
+
+		{% if alumnos %}
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<th>Edad</th>
+			</tr>
+		    {% for alumno in alumnos %}
+			<tr>
+		        <th>{{ alumno.nombre }}</th>
+				<th>{{ alumno.edad }}</th>
+			</tr>
+		    {% endfor %}
+		{% else %}
+		    <p>No hay alumnos disponibles.</p>
+		{% endif %}
+	</body>
+
+</html>

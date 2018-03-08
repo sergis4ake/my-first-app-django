@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> Actividades </title>
+	</head>
+
+	<body>
+
+		{% if actividades %}
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<th>Peso</th>
+			</tr>
+		    {% for actividad in actividades %}
+			<tr>
+		        <th>{{ actividad.nombre }}</th>
+				<th>{{ actividad.peso }}</th>
+			</tr>
+		    {% endfor %}
+		{% else %}
+		    <p>No hay actividades disponibles.</p>
+		{% endif %}
+	</body>
+
+</html>

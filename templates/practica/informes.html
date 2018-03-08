@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> Informes </title>
+	</head>
+
+	<body>
+
+		{% if informes_actividades %}
+		<table>
+			<tr>
+				<th>Alumno</th>
+				<th>Actividad</th>
+				<th>Nota</th>
+			</tr>
+		    {% for informe in informes_actividades %}
+			<tr>
+		        <th>{{ informe.alumno.nombre }}</th>
+				<th>{{ informe.actividad.nombre }}</th>
+				<th>{{ informe.nota }}</th>
+			</tr>
+		    {% endfor %}
+		{% else %}
+		    <p>No hay informes disponibles.</p>
+		{% endif %}
+	</body>
+
+</html>
