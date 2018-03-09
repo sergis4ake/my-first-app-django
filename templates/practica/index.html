@@ -1,11 +1,48 @@
-{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="es">
 
+{% include "practica/header.html" %}
+	<body>
+		<!-- Menu de navegación -->
+		{% include "practica/nav.html" %}
 
-		<h1 class="text-uppercase text-center "> {{title}} </h1>
+		<header class="text-center" id="home">
+			<br><br><br>
+	    	<div class="container page-header">
+	        	<div class="row">
+	          		<div class="col-lg-12 mx-auto text-center">
+	            		<h1 class="text-uppercase">
+	                		<strong>{{ primero }}</strong>
+	              		</h1>
+	            		<hr class="light my-4">
+						<h2>{{ texto_primero }} </h2>
+					</div>
+	          		<div class="col-lg-12">
+						<br><br><br>
+	            		<a class="btn btn-light btn-primary" href="#mas">{{ descubre }}</a>
+	          		</div>
+	        	</div>
+	      	</div>
+			<br><br><br><br>
+	    </header>
 
-		<p> <a href="alumnos"> Alumnos </a> </p>
-		<p> <a href="actividades"> Actividades </a> </p>
-		<p> <a href="informes"> Informes </a> </p>
+		<section class="bg-primary text-center" id="mas">
+			<br><br><br>
+    		<div class="container page-header">
+      			<div class="row">
+        			<div class="col-lg-12 mx-auto">
+          				<h1 class="text-white">{{ segundo }}</h1>
+				          <hr class="light my-4">
+				          <h2> {{ texto_segundo }}</h2><br>
+        			</div>
+					<div class="col-lg-12">
+						<br><br><br>
+						<a class="btn btn-light btn-default" href="#home">{{ menu.0 }}</a>
+					</div>
+      			</div>
+    		</div>
+			<br><br><br><br>
+  		</section>
 	</body>
 
 </html>
