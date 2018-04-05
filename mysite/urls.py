@@ -25,7 +25,7 @@ urlpatterns = [
 from django.conf.urls import include, url
 
 urlpatterns = [
-    #url(r'^ejemplo3/', include('ejemplo3.urls')),
+    url(r'^ejemplo3/', include('ejemplo3.urls')),
     #url(r'^ejemplo4/', include('ejemplo4.urls')),
     #url(r'^ejemplo5/', include('ejemplo5.urls')),
     url(r'^practica/', include('practica.urls')),
